@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+
+}
+
+.main-div {
+    background-color: rgb(75, 71, 71);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+.form-div{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(210, 210, 210);
+    padding: 50px 60px 70px;
+    text-align: center;
+    border: none;
+    /* border-radius: solid 2px rgb(146, 17, 17) ; */
+}
+.form-div h1{
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: black;
+    text-decoration: dotted;
+}
+.form-div h1::after{
+
+    content:'';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.input-field{
+    background: dimgrey;
+    margin: 15px 0px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 5px 3px;
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+       
+}
+#userNameIcon{
+   position: absolute;
+    width: 35px;
+    left: 27px;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+
+
+}
+#userMailIcon{
+    position: absolute;
+    width: 30px;
+    /* height: 42px; */
+    left: 30px;
+    background-color: blue;
+}
+#userPasswordIcon{
+    position: absolute;
+    width: 30px;
+    left: 32px;
+
+
+}
+
+ i{
+    width: 35px;
+    
+ }
+
+ #userPasswordId{
+  width: 100%;
+ }
+
+form p{
+    text-align: center;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: rgb(10, 10, 103);
+    font-size: 14px;
+
+}
+
+
+.buttons{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 50px;
+}
+.buttons button{
+    flex-basis: 45%;
+    background-color: #3235ec;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor:pointer;
+}
+
+.input-group{
+    height: 300px;
+}
+.buttons button.disable{
+    
+    background: rgb(234, 234, 234);
+
+}
+.buttons button.disable:hover{
+   color: blue;
+}
+.buttons button.able{
+    
+    /* background: rgb(234, 234, 234); */
+     color: white;
+     
+}
+.buttons button.able:hover{
+    background-color: blue;
+}
+
+
+/* transition: max-height 0.5s; */
+#titleId{
+  transition-duration: 5s;  
+}
+
+.form-div{
+border: none;
+outline: none;
+border-radius: 50px;
+height: 90vh;
+box-shadow: 5px 5px 50px grey;
+}
+
